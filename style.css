@@ -1,0 +1,204 @@
+Global Styles
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #e4e5e6;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0096c7 3px solid;
+}
+
+header a {
+    color: #0a0a0a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+header .logo {
+    float: left;
+    font-size: 24px;
+}
+
+header ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header li a {
+    transition: color 0.3s ease;
+}
+
+header li a:hover {
+    color: #0096c7;
+}
+
+/* Hero Section */
+#hero {
+    background: url('') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 80px;
+    color: #4860b8;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#hero button {
+    padding: 10px 20px;
+    background: #0096c7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Features Section */
+#features {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card {
+    width: 45%;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Additional Services Section */
+#additional-services {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.service-card {
+    width: 45%;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Team Section */
+#team {
+    background: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-photos {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.team-photos img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.primary {
+    background: #1a2b3c;
+    color: #fff;
+    border: none;
+}
+
+.secondary {
+    background: #fff;
+    color: #1a2b3c;
+    border: 1px solid #1a2b3c;
+}
+
+/* Footer */
+footer {
+    background: #1a2b3c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0096c7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero {
+        padding: 0 20px;
+    }
+
+    .feature-cards, #additional-services, .team-photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .service-card, .team-photos img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
